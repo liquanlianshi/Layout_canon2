@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社会影响 | AI × 新质生产力</title>
+<meta name="description" content="用 11 组数据图形看新质生产力对社会发展的作用：就业与收入、日常生活、区域协调、绿色低碳四个维度。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%2370B6D2'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2370D2BE' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/palette.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span><b>AI · 新质生产力</b><small>DATA VISUALIZATION</small></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html">总览</a>
+      <a href="scale.html">产业规模</a>
+      <a href="industry.html">行业渗透</a>
+      <a href="labor.html">劳动力变革</a>
+      <a href="future.html">未来展望</a>
+      <a href="social.html" class="active">社会影响</a>
+    </nav>
+  </div>
+  <div class="nav-progress" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <!-- ================= 页头 ================= -->
+  <section class="page-hero">
+    <div class="hero-aura" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">总览</a> <span>/</span> <span>社会影响</span></nav>
+      <span class="eyebrow reveal" style="margin-top:14px; display:inline-flex;">Social Impact</span>
+      <h1 class="reveal d1">社会影响：技术红利流向了谁？</h1>
+      <div class="datum-row reveal d2" style="--accent-deep:var(--c6-deep)">
+        <span class="datum"><b>8400</b>万<small>新就业形态劳动者</small></span>
+        <span class="datum" style="--accent-deep:var(--c4-deep)"><b>15.5</b>万亿<small>网上零售额 · 2024</small></span>
+        <span class="datum" style="--accent-deep:var(--c5-deep)"><b>17.9</b>pp<small>城乡互联网普及率差距</small></span>
+        <span class="datum" style="--accent-deep:var(--c3-deep)"><b>1288.8</b>万辆<small>新能源汽车产量 · 2024</small></span>
+      </div>
+      <div class="hero-meta reveal d3">
+        <span class="chip"><i style="background:var(--c6)"></i>就业与收入</span>
+        <span class="chip"><i style="background:var(--c2)"></i>日常生活</span>
+        <span class="chip"><i style="background:var(--c5)"></i>区域协调</span>
+        <span class="chip"><i style="background:var(--c4)"></i>绿色低碳</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 01 就业与收入 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c6)">
+        <span class="kicker"><em style="--accent:var(--c6)">01</em> 就业与收入</span>
+        <h2>机会从哪里长出来？</h2>
+      </div>
+
+      <div class="card chart-card reveal">
+        <div class="chart-title"><h3>城乡居民人均可支配收入与收入比</h3><span>单位：元 / 倍</span></div>
+        <div id="chart-soc-income" class="chart"></div>
+        <span class="source">国家统计局历年国民经济和社会发展统计公报（2019–2024）</span>
+      </div>
+
+      <div class="card chart-card reveal" style="margin-top:14px;">
+        <div class="chart-title"><h3>城镇新增就业人数</h3><span>单位：万人</span></div>
+        <div id="chart-soc-jobs" class="chart" style="height:300px;"></div>
+        <span class="source">人力资源和社会保障部（2019–2024 年城镇新增就业，年均约 1219 万人）</span>
+      </div>
+
+      <div class="tile-grid reveal" style="margin-top:14px;">
+        <div class="tile" style="--accent-soft:var(--c6-soft); --accent-deep:var(--c6-deep)">
+          <span class="ico" aria-hidden="true">💼</span><span><b>8400 万</b><span>新就业形态劳动者（人社部 · 2023）</span></span>
+        </div>
+        <div class="tile" style="--accent-soft:var(--c1-soft); --accent-deep:var(--c1-deep)">
+          <span class="ico" aria-hidden="true">🆕</span><span><b>93 个</b><span>累计发布新职业，含 AI 训练师等</span></span>
+        </div>
+        <div class="tile" style="--accent-soft:var(--c3-soft); --accent-deep:var(--c3-deep)">
+          <span class="ico" aria-hidden="true">🧾</span><span><b>1256 万</b><span>城镇新增就业 · 2024（人社部）</span></span>
+        </div>
+        <div class="tile" style="--accent-soft:var(--c2-soft); --accent-deep:var(--c2-deep)">
+          <span class="ico" aria-hidden="true">🧑‍🏫</span><span><b>2 亿</b><span>灵活就业人员规模（口径含非平台就业）</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 日常生活 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c2)">
+        <span class="kicker"><em style="--accent:var(--c2)">02</em> 日常生活</span>
+        <h2>数字服务已经成为「默认选项」</h2>
+      </div>
+
+      <div class="grid g-2-1" style="align-items:start;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3>全国网上零售额</h3><span>单位：万亿元</span></div>
+          <div id="chart-soc-retail" class="chart"></div>
+          <span class="source">国家统计局（2019–2024 年网上零售额）</span>
+        </div>
+
+        <div class="card chart-card reveal d1">
+          <div class="chart-title"><h3>移动支付普及率</h3><span>全球第一</span></div>
+          <div id="chart-soc-pay" class="chart" style="height:300px;"></div>
+          <span class="source">中国人民银行 / 中国支付清算协会公开数据（约 86%）</span>
+        </div>
+      </div>
+
+      <div class="card chart-card reveal" style="margin-top:14px;">
+        <div class="chart-title"><h3>生成式 AI 产品用户规模：一年如何翻倍</h3><span>单位：亿人</span></div>
+        <div id="chart-soc-genai" class="chart" style="height:300px;"></div>
+        <span class="source">CNNIC《中国互联网络发展状况统计报告》第 54/55/56 次（2024.06 的 2.30 亿 → 2024.12 的 2.49 亿 → 2025.06 的 5.15 亿，普及率 36.5%）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 区域协调 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c5)">
+        <span class="kicker"><em style="--accent:var(--c5)">03</em> 区域协调</span>
+        <h2>把网络和算力铺到乡村与西部</h2>
+      </div>
+
+      <div class="grid g-2-1" style="align-items:start;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3>城乡互联网普及率</h3><span>单位：%</span></div>
+          <div id="chart-soc-gap" class="chart" style="height:340px;"></div>
+          <span class="source">CNNIC 第 55 次报告（2024.12）：城镇 85.3%、农村 67.4%，差距 17.9 个百分点</span>
+        </div>
+
+        <div class="card chart-card reveal d1">
+          <div class="chart-title"><h3>农村网络零售额</h3><span>单位：万亿元</span></div>
+          <div id="chart-soc-rural" class="chart" style="height:340px;"></div>
+          <span class="source">商务部农村电子商务发展报告（2020–2024）</span>
+        </div>
+      </div>
+
+      <div class="card chart-card reveal" style="margin-top:14px;">
+        <div class="chart-title"><h3>数字乡村基础设施：从「通」到「用」</h3><span>单位：%</span></div>
+        <div id="chart-soc-village" class="chart" style="height:280px;"></div>
+        <span class="source">工信部（行政村已实现宽带全覆盖、通 5G 比例超八成 · 2024）与 CNNIC（农村互联网普及率 · 2024.12）公开数据</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04 绿色低碳 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c4)">
+        <span class="kicker"><em style="--accent:var(--c4)">04</em> 绿色低碳</span>
+        <h2>新质生产力，本身也是绿色生产力</h2>
+      </div>
+
+      <div class="card chart-card reveal">
+        <div class="chart-title"><h3>新能源汽车产量：六年增长约十倍</h3><span>单位：万辆</span></div>
+        <div id="chart-soc-ev" class="chart"></div>
+        <span class="source">中国汽车工业协会（2019–2024 年新能源汽车产量）</span>
+      </div>
+
+      <div class="grid g-2-1" style="align-items:start; margin-top:14px;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3>数据中心电能利用效率（PUE）</h3><span>越接近 1 越节能</span></div>
+          <div id="chart-soc-pue" class="chart" style="height:300px;"></div>
+          <span class="source">工信部《新型数据中心发展三年行动计划》（新建大型及以上数据中心 PUE ≤ 1.3）；「先进水平」为业界公开口径（≤ 1.25）</span>
+        </div>
+
+        <div class="card chart-card reveal d1">
+          <div class="chart-title"><h3>可再生能源发电装机占比</h3><span>2024 年末</span></div>
+          <div id="chart-soc-renew" class="chart" style="height:300px;"></div>
+          <span class="source">国家能源局：2024 年末全国可再生能源发电装机约 14.5 亿千瓦，占总装机约 56%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <nav class="pager" aria-label="翻页">
+      <a href="future.html" style="--accent:var(--c7)"><small>← 上一页</small><b>未来展望：2030 年的坐标</b></a>
+      <a href="index.html" style="--accent:var(--c5)"><small>回到首页 →</small><b>总览：AI 为什么是新质生产力</b></a>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div style="max-width:340px;">
+        <h4>AI × 新质生产力</h4>
+        <p>专题页 · 社会影响。收入、就业、消费与能源数据来自官方统计；口径与年份见各图下方来源。</p>
+      </div>
+      <div>
+        <h4>专题导航</h4>
+        <ul>
+          <li><a href="index.html">总览</a></li>
+          <li><a href="scale.html">产业规模</a></li>
+          <li><a href="industry.html">行业渗透</a></li>
+          <li><a href="labor.html">劳动力变革</a></li>
+          <li><a href="future.html">未来展望</a></li>
+          <li><a href="social.html">社会影响</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>本页数据来源</h4>
+        <ul>
+          <li>国家统计局 · 人力资源和社会保障部</li>
+          <li>商务部 · 中国人民银行 · CNNIC</li>
+          <li>中国汽车工业协会 · 国家能源局 · 工信部</li>
+        </ul>
+      </div>
+      <div>
+        <h4>技术说明</h4>
+        <ul>
+          <li>柱线组合 / 环形 / 仪表盘 / 对比条形</li>
+          <li>Apache ECharts 5（本地内置）</li>
+          <li>纯静态 · 支持离线运行</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">© <span id="year">2026</span> 数据可视化课程作业 · 配色：多彩低饱和度（统一 S≈52%）</div>
+  </div>
+</footer>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="assets/js/palette.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/charts-social.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-en-title="Industry Penetration | AI × new quality productive forces">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行业渗透 | AI × 新质生产力</title>
+<meta name="description" content="制造、医疗、金融、教育、交通、农业六大行业的 AI 渗透热力图、价值传导桑基图与实证效率提升数据。" data-en="Heatmaps, Sankey diagrams and evidence-based efficiency gains for AI penetration across manufacturing, healthcare, finance, education, transport and agriculture.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%2370B6D2'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2370D2BE' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/palette.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span><b>AI · 新质生产力</b><small>DATA VISUALIZATION</small></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航" data-en-aria="Main navigation">
+      <a href="index.html" data-en="Overview">总览</a>
+      <a href="scale.html" data-en="Industry Scale">产业规模</a>
+      <a href="industry.html" class="active" data-en="Industry Penetration">行业渗透</a>
+      <a href="labor.html" data-en="Workforce Transformation">劳动力变革</a>
+      <a href="future.html" data-en="Outlook">未来展望</a>
+      <a href="social.html" data-en="Social Impact">社会影响</a>
+    </nav>
+  </div>
+  <div class="nav-progress" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <!-- ================= 页头 ================= -->
+  <section class="page-hero">
+    <div class="hero-aura" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑" data-en-aria="Breadcrumb"><a href="index.html" data-en="Overview">总览</a> <span>/</span> <span data-en="Industry Penetration">行业渗透</span></nav>
+      <span class="eyebrow reveal" style="margin-top:14px; display:inline-flex;">Industry Penetration</span>
+      <h1 class="reveal d1" data-en="Industry Penetration: which industries is AI rewriting?">行业渗透：AI 正在改写哪些行业？</h1>
+      <p class="lead reveal d2" data-en="Productivity change, industry by industry: heatmaps, Sankey diagrams and empirical studies quantify AI penetration and efficiency leaps.">生产力变革落到行业：热力图、桑基图与实证研究，量化 AI 渗透与效率跃迁。</p>
+      <div class="hero-meta reveal d3">
+        <span class="chip" data-en-html="&lt;i style=&quot;background:var(--c5)&quot;&gt;&lt;/i&gt;Penetration heat"><i style="background:var(--c5)"></i>渗透热力</span>
+        <span class="chip" data-en-html="&lt;i style=&quot;background:var(--c4)&quot;&gt;&lt;/i&gt;Value transmission"><i style="background:var(--c4)"></i>价值传导</span>
+        <span class="chip" data-en-html="&lt;i style=&quot;background:var(--c2)&quot;&gt;&lt;/i&gt;Efficiency evidence"><i style="background:var(--c2)"></i>效率实证</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 01 渗透热力图 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c5)">
+        <span class="kicker" data-en-html="&lt;em style=&quot;--accent:var(--c5)&quot;&gt;01&lt;/em&gt; Penetration landscape"><em style="--accent:var(--c5)">01</em> 渗透全景</span>
+        <h2 data-en="Industry × function: a high-low map of AI penetration">行业 × 环节：AI 渗透的「高低地图」</h2>
+        <p class="lead" data-en="Across the five functions of the value chain, AI penetration is far from even.">价值链五个环节，AI 渗透冷热不均。</p>
+      </div>
+
+      <div class="card chart-card reveal">
+        <div class="chart-title"><h3 data-en="AI penetration across industries and value-chain functions (illustrative assessment)">AI 在各行业价值链环节的渗透度（示意评估）</h3><span data-en="Darker colour = deeper penetration">颜色越深 = 渗透越深</span></div>
+        <div id="chart-ind-heatmap" class="chart tall"></div>
+        <span class="source" data-en="Relative assessment compiled from MIIT pilot-demonstration lists, industry white papers and public case studies (0–100 relative scale, illustrative)">综合工信部试点示范名单、行业白皮书与公开案例整理的相对评估（0–100 相对量纲，示意用途）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 价值传导 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c4)">
+        <span class="kicker" data-en-html="&lt;em style=&quot;--accent:var(--c4)&quot;&gt;02&lt;/em&gt; Value transmission"><em style="--accent:var(--c4)">02</em> 价值传导</span>
+        <h2 data-en="From technology capabilities to productivity gains: where do the money and the efficiency come from?">从技术能力到生产力收益：钱和效率从哪里来？</h2>
+        <div class="datum-row"><span class="datum" style="--accent-deep:var(--c4-deep)" data-en-html="&lt;b&gt;1&lt;/b&gt; group of capabilities&lt;small&gt;enters industries via use cases&lt;/small&gt;"><b>1</b>组能力<small>经应用场景进入行业</small></span><span class="datum" style="--accent-deep:var(--c5-deep)" data-en-html="&lt;b&gt;4&lt;/b&gt; gain types&lt;small&gt;Cost reduction · Efficiency gains · Innovation · Experience&lt;/small&gt;"><b>4</b>类收益<small>降本 · 提效 · 创新 · 体验</small></span></div>
+      </div>
+
+      <div class="card chart-card reveal">
+        <div class="chart-title"><h3 data-en="Technology capabilities → Use cases → Productivity gains">技术能力 → 应用场景 → 生产力收益</h3><span data-en="Relative weight (illustrative)">相对权重（示意）</span></div>
+        <div id="chart-ind-sankey" class="chart tall" style="height:500px;"></div>
+        <span class="source" data-en="Transmission relationships distilled from public industry reports; flows are illustrative relative weights, not real economic scale">基于公开行业报告的传导关系梳理；流量为示意性相对权重，不代表真实经济规模</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 效率实证 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c2)">
+        <span class="kicker" data-en-html="&lt;em style=&quot;--accent:var(--c2)&quot;&gt;03&lt;/em&gt; Efficiency evidence"><em style="--accent:var(--c2)">03</em> 效率实证</span>
+        <h2 data-en="Not 'it feels faster': numbers from controlled experiments">不是「感觉更快」：来自对照实验的数字</h2>
+        <div class="datum-row"><span class="datum" style="--accent-deep:var(--c5-deep)" data-en-html="&lt;b&gt;55.8&lt;/b&gt;%&lt;small&gt;faster coding tasks (GitHub, 2022)&lt;/small&gt;"><b>55.8</b>%<small>编码任务提速（GitHub，2022）</small></span><span class="datum" style="--accent-deep:var(--c4-deep)" data-en-html="&lt;b&gt;25.1&lt;/b&gt;%&lt;small&gt;faster task completion (BCG consultant experiment, 2023)&lt;/small&gt;"><b>25.1</b>%<small>任务提速（BCG 顾问实验，2023）</small></span><span class="datum" style="--accent-deep:var(--c6-deep)" data-en-html="&lt;b&gt;14&lt;/b&gt;%&lt;small&gt;more productive per issue resolved (McKinsey, 2023)&lt;/small&gt;"><b>14</b>%<small>单次问题处理生产率提升（麦肯锡，2023）</small></span></div>
+      </div>
+
+      <div class="grid g-2-1" style="align-items:start;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3 data-en="Efficiency gains with generative-AI assistance">生成式 AI 辅助下的工作效率提升</h3><span data-en="Published controlled studies">公开对照研究</span></div>
+          <div id="chart-ind-efficiency" class="chart"></div>
+          <span class="source" data-en="GitHub &amp; Microsoft (2022, controlled experiment with 95 developers) · BCG &amp; Harvard (2023, experiment with 758 consultants) · McKinsey (2023, customer-service scenario estimate)">GitHub &amp; 微软（2022，95 名开发者对照实验）· BCG &amp; 哈佛大学（2023，758 名顾问实验）· 麦肯锡（2023，客户服务场景测算）</span>
+        </div>
+
+        <div class="card flat reveal d1" style="--accent:var(--c2)">
+          <h3 data-en="Three studies at a glance">三个研究速读</h3>
+          <ul class="notes">
+            <li data-en-html="&lt;b&gt;Coding (GitHub, 2022):&lt;/b&gt; Developers using Copilot finished the same task &lt;b&gt;55.8%&lt;/b&gt; faster than the control group, with no drop in quality."><b>编码（GitHub，2022）：</b>使用 Copilot 的开发者完成同一任务的耗时比对照组少 <b>55.8%</b>，任务质量未下降。</li>
+            <li data-en-html="&lt;b&gt;Knowledge work (BCG, 2023):&lt;/b&gt; Consultants using AI completed &lt;b&gt;12.2%&lt;/b&gt; more tasks, &lt;b&gt;25.1%&lt;/b&gt; faster and with &lt;b&gt;40%&lt;/b&gt; higher quality scores."><b>知识工作（BCG，2023）：</b>使用 AI 的顾问完成的任务量多 <b>12.2%</b>、速度快 <b>25.1%</b>、质量评分高 <b>40%</b>。</li>
+            <li data-en-html="&lt;b&gt;Customer service (McKinsey, 2023):&lt;/b&gt; Based on real service teams, AI assistance raised productivity per issue by about &lt;b&gt;14%&lt;/b&gt;, with even bigger gains for newer agents."><b>客服（麦肯锡，2023）：</b>基于真实客服团队的测算，AI 辅助将单次问题处理生产率提升约 <b>14%</b>，新手提升更显著。</li>
+          </ul>
+          <span class="source" data-en="Efficiency gains come from human-AI collaboration, not automation: AI drafts and retrieves, people judge and take responsibility">效率提升来自「人机协作」而非「无人化」：AI 承担初稿与检索，人负责判断与责任</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04 行业雷达 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c7)">
+        <span class="kicker" data-en-html="&lt;em style=&quot;--accent:var(--c7)&quot;&gt;04&lt;/em&gt; Industry profiles"><em style="--accent:var(--c7)">04</em> 行业画像</span>
+        <h2 data-en="AI maturity compared across four industries">四个行业的 AI 成熟度对比</h2>
+        <div class="datum-row"><span class="datum" style="--accent-deep:var(--c4-deep)" data-en-html="&lt;b&gt;4&lt;/b&gt; dimensions&lt;small&gt;Penetration breadth · Application depth · Value realisation · Data foundation&lt;/small&gt;"><b>4</b>个维度<small>渗透广度 · 应用深度 · 价值实现 · 数据基础</small></span><span class="datum" style="--accent-deep:var(--c7-deep)" data-en-html="&lt;b&gt;421&lt;/b&gt; factories&lt;small&gt;national smart-manufacturing model factories · 2024&lt;/small&gt;"><b>421</b>家<small>国家级智能制造示范工厂 · 2024</small></span></div>
+      </div>
+
+      <div class="grid g-1-2" style="align-items:start;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3 data-en="Industry AI maturity radar (illustrative assessment)">行业 AI 成熟度雷达（示意评估）</h3><span>0–100</span></div>
+          <div id="chart-ind-radar" class="chart" style="height:400px;"></div>
+          <span class="source" data-en="Relative assessment based on public reports, for illustration">基于公开报告整理的相对评估，示意用途</span>
+        </div>
+
+        <div class="grid g2" style="align-items:start;">
+          <article class="card soft hoverable reveal" style="--accent:var(--c4); --accent-soft:var(--c4-soft); --accent-deep:var(--c4-deep)">
+            <h3 data-en="🏭 Manufacturing">🏭 制造业</h3>
+            <p data-en-html="AI quality inspection, predictive maintenance and flexible scheduling are the first to land. By 2024, China had cultivated &lt;b&gt;421&lt;/b&gt; national smart-manufacturing model factories and accounts for roughly &lt;b&gt;40%&lt;/b&gt; of the world's Lighthouse factories — the largest share globally.">智能质检、预测性维护、柔性排产率先落地。截至 2024 年，中国已培育 <b>421 家</b>国家级智能制造示范工厂，
+               全球「灯塔工厂」中中国占比约<b>四成</b>、居世界第一。</p>
+          </article>
+          <article class="card soft hoverable reveal d1" style="--accent:var(--c3); --accent-soft:var(--c3-soft); --accent-deep:var(--c3-deep)">
+            <h3 data-en="🏥 Healthcare">🏥 医疗健康</h3>
+            <p data-en="AI-assisted medical imaging diagnosis, record quality control and faster drug discovery. In 2024, the National Healthcare Security Administration included 'AI-assisted diagnosis' in its pricing guidelines for the first time, opening the door to scaled reimbursement for AI in healthcare.">医学影像辅助诊断、病历质控、药物研发加速。2024 年国家医保局在价格项目立项指南中
+               首次纳入「人工智能辅助诊断」，为 AI 医疗的规模化收费打开通道。</p>
+          </article>
+          <article class="card soft hoverable reveal d2" style="--accent:var(--c1); --accent-soft:var(--c1-soft); --accent-deep:var(--c1-deep)">
+            <h3 data-en="🏦 Finance">🏦 金融</h3>
+            <p data-en="AI risk control, anti-fraud, investment-research assistance and large-model customer service. With the strongest data foundation, finance is one of the earliest industries to put generative AI into production.">智能风控、反欺诈、投研辅助与大模型客服。金融业数据基础最好，
+               是生成式 AI 最早进入生产环境的行业之一。</p>
+          </article>
+          <article class="card soft hoverable reveal d3" style="--accent:var(--c6); --accent-soft:var(--c6-soft); --accent-deep:var(--c6-deep)">
+            <h3 data-en="🌾 Agriculture">🌾 农业</h3>
+            <p data-en="Drone crop protection, smart farm machinery and remote-sensing yield estimation are spreading steadily, but limited data and talent keep penetration below industry and services — making it the incremental market with the most potential.">无人机植保、智能农机、遥感估产逐步铺开，但受限于数据与人才基础，
+               渗透深度仍低于工业与服务业，是最具潜力的增量市场。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 场景热度 ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" style="--accent:var(--c3)">
+        <span class="kicker" data-en-html="&lt;em style=&quot;--accent:var(--c3)&quot;&gt;05&lt;/em&gt; Use-case heat"><em style="--accent:var(--c3)">05</em> 场景热度</span>
+        <h2 data-en="Which AI use cases are hottest?">哪些 AI 场景最「热」？</h2>
+        <p class="lead" data-en="The bigger the word, the hotter the use case.">词云字号越大，场景热度越高。</p>
+      </div>
+
+      <div class="grid g-2-1" style="align-items:center;">
+        <div class="card chart-card reveal">
+          <div class="chart-title"><h3 data-en="Word cloud of AI use-case buzz">AI 落地场景热度词云</h3><span data-en="Font size = relative buzz (illustrative)">字号 = 相对热度（示意）</span></div>
+          <div id="chart-ind-wordcloud" class="chart" style="height:420px;"></div>
+          <span class="source" data-en="Compiled from use-case attention in public industry coverage; font size indicates relative scale, not enterprise procurement data">基于公开行业报道的场景关注度整理，字号为相对量级示意，非企业采购数据</span>
+        </div>
+
+        <div class="card flat reveal d1" style="--accent:var(--c3)">
+          <h3 data-en="How to read the three tiers">三个梯队怎么看？</h3>
+          <ul class="notes" style="--accent:var(--c3)">
+            <li data-en-html="&lt;b&gt;Tier 1 (already scaled):&lt;/b&gt; AI quality inspection, AI customer service, content generation — now in regular budgets and procurement."><b>第一梯队（已规模化）：</b>智能质检、智能客服、内容生成 —— 进入常规预算与采购体系。</li>
+            <li data-en-html="&lt;b&gt;Tier 2 (leaders first):&lt;/b&gt; AI risk control, coding copilots, supply-chain optimisation — adopted by large firms, with SMEs still watching."><b>第二梯队（头部先行）：</b>智能风控、代码助手、供应链优化 —— 大企业落地，中小企业仍在观望。</li>
+            <li data-en-html="&lt;b&gt;Tier 3 (long-term track):&lt;/b&gt; AI drug discovery, remote-sensing interpretation, smart breeding — technically feasible, but higher data and compliance costs mean a longer payback."><b>第三梯队（长期赛道）：</b>AI 制药、遥感解译、智慧育种 —— 技术可行，但数据与合规成本较高，回报周期更长。</li>
+          </ul>
+          <p class="muted" style="font-size:13px; margin-top:10px;" data-en="Where the buzz migrates is where AI's productivity value is released.">热度的迁移方向，就是 AI 生产力价值释放的方向。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <nav class="pager" aria-label="翻页" data-en-aria="Pagination">
+      <a href="scale.html" style="--accent:var(--c4)" data-en-html="&lt;small&gt;← Previous&lt;/small&gt;&lt;b&gt;Industry Scale: the economic size of AI&lt;/b&gt;"><small>← 上一页</small><b>产业规模：AI 的经济体量</b></a>
+      <a href="labor.html" style="--accent:var(--c6)" data-en-html="&lt;small&gt;Next →&lt;/small&gt;&lt;b&gt;Workforce Transformation: replacement or augmentation?&lt;/b&gt;"><small>下一页 →</small><b>劳动力变革：替代还是增强？</b></a>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div style="max-width:340px;">
+        <h4 data-en="AI × new quality productive forces">AI × 新质生产力</h4>
+        <p data-en="Feature page · Industry Penetration. Penetration and maturity are relative assessments; efficiency figures come from published controlled studies.">专题页 · 行业渗透。渗透度与成熟度为相对评估，效率数据来自公开对照研究。</p>
+      </div>
+      <div>
+        <h4 data-en="Topics">专题导航</h4>
+        <ul>
+          <li><a href="index.html" data-en="Overview">总览</a></li>
+          <li><a href="scale.html" data-en="Industry Scale">产业规模</a></li>
+          <li><a href="industry.html" data-en="Industry Penetration">行业渗透</a></li>
+          <li><a href="labor.html" data-en="Workforce Transformation">劳动力变革</a></li>
+          <li><a href="future.html" data-en="Outlook">未来展望</a></li>
+          <li><a href="social.html" data-en="Social Impact">社会影响</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Data sources for this page">本页数据来源</h4>
+        <ul>
+          <li data-en="GitHub · BCG · McKinsey · Harvard University">GitHub · BCG · 麦肯锡 · 哈佛大学</li>
+          <li data-en="MIIT · National Healthcare Security Administration (NHSA)">工信部 · 国家医保局</li>
+          <li data-en="World Economic Forum 'Lighthouse factories' programme">世界经济论坛「灯塔工厂」评选</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Technical notes">技术说明</h4>
+        <ul>
+          <li data-en="Heatmap / Sankey diagram / radar chart">热力图 / 桑基图 / 雷达图</li>
+          <li data-en="Apache ECharts 5 (bundled locally)">Apache ECharts 5（本地内置）</li>
+          <li data-en="Fully static · runs offline">纯静态 · 支持离线运行</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine" data-en-html="© &lt;span id=&quot;year&quot;&gt;2026&lt;/span&gt; Data-visualisation coursework · Palette: colourful and low-saturation (uniform S≈52%)">© <span id="year">2026</span> 数据可视化课程作业 · 配色：多彩低饱和度（统一 S≈52%）</div>
+  </div>
+</footer>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="vendor/echarts-wordcloud.min.js"></script>
+<script src="assets/js/palette.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/charts-industry.js"></script>
+</body>
+</html>

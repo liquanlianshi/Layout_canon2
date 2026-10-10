@@ -1,0 +1,15 @@
+{
+  "echarts-wordcloud.min.js": {
+    "url": "https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js",
+    "sha256": "7b6f0d55971d9de5913120c7ce6342f3551efd00b4a1df8a50f08385bb25f155"
+  },
+  "china.json": {
+    "url": "https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/json/china.json",
+    "canonical_sha256": "dc802111c097e12e572ba9b1839ba9834f0047f94add7421ed6f05c63cc7889c",
+    "note": "vendor/china-map.js 中包裹的 GeoJSON（规范化后）的 sha256，供 --verify 与人工核对"
+  },
+  "echarts.min.js": {
+    "url": "https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js",
+    "sha256": "e84270bd0cd5bdf60fefc26d00c2a391cb2e81f4d26a7a9ee16185a54773a3cf"
+  }
+}
